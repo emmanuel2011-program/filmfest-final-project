@@ -4,8 +4,15 @@
   "description": "wdd330-final-project",
   "main": "main.js",
   "scripts": {
-    
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "lint": "eslint *.js src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\"",
+    "test": "jest"
   },
-  "author": "Okoye Emmanuel"
-  
+  "author": "Okoye Emmanuel",
+  "dependencies": {
+    "latest": "^0.2.0",
+    "vite": "^6.1.0"
+  }
 }
